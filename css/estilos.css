@@ -1,0 +1,216 @@
+/* styles basic */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-black: #212121;
+  --color-white: #FFF;
+  --color-yellow: #d0b824;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;    
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-white);
+ /*  background: rgb(38,38,41);
+  background: linear-gradient(90deg, rgba(38,38,41,1) 0%, rgba(78,78,79,1) 14%, rgba(25,34,36,1) 53%, rgba(33,33,33,1) 76%);
+ */
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+/*   Start header */
+.header{
+  color: var(--color-white);
+}
+
+.header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+}
+
+.header nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  margin: .5rem;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  padding: .5rem .73rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+ /*  End header */
+
+/*      Start sections */
+
+.article section {
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100vh;
+}
+
+.article section img {
+  width: 300px;
+  height: auto;
+}
+
+.article .home .description-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  position: relative;
+}
+.image-container .image {
+  width: 100%;
+}
+.image-container .description-profile {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(12, 12, 12, 0.9);
+} 
+.home .image-container .description-profile h1 {
+  margin-bottom: 20px;
+  border-bottom: #d0b824 solid 3px;
+}
+
+.home .image-container .description-profile h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: #d0b824 solid 1px;
+}
+
+
+   /* End sections */
+
+   /* Start footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 99;
+  position: fixed;
+  width: 500px;
+  height: 200px;
+  top: 80%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+}
+
+.footer a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  margin: .5rem;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  padding: .5rem .73rem;
+  border-radius: 25%;
+}
+
+  /*  End footer */
+
+/*     Start MediaQueries */
+
+@media  screen and (min-width: 768px) {
+  /* Aquí van los estilos para resoluciones de pantalla mayores o iguales a 768px */
+  
+   /*  HEader */
+.header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(-92%,-50%);
+  height: 100%;
+  z-index: 99;
+}
+
+
+.header nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  margin: .5rem;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  padding: .5rem .73rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+ /*  Home */
+ .home {
+  display: flex;
+  justify-content: center;
+}
+
+.home .image-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.home .image-container .image {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.home .image-container .description-profile {
+  width: 50%;
+}
+
+.image-container .description-profile {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  padding: 0;
+  background-color: transparent;
+}
+
+.home .image-container .description-profile h1 {
+  margin-bottom: 30px;
+  border-bottom: #d0b824 solid 3px;
+}
+
+.home .image-container .description-profile h2 {
+  margin-bottom: 30px;
+  border-bottom: #d0b824 solid 1px;
+}
+
+
+}
