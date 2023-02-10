@@ -136,6 +136,45 @@ body {
     .cards {
       width: 100%;
     } 
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    
+    .cards div {
+      background-color: rgba(208, 184, 36, 0.9);
+    }
+    
+    .cards h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      background-color: rgba(208, 184, 36, 0.9);
+    }
+    
+    .cards button {
+      margin-top: 10px;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+    
+      background-color: var(--color-yellow);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
     .portafolio .projects .cards .small  {
      width: 90%;
 
@@ -143,6 +182,20 @@ body {
 
     .portafolio .projects .cards .large {
       display: none;
+    }
+
+    .owl-prev, .owl-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 50em;
+      background-color: var(--color-yellow); /* color de fondo */
+      width: 50px; /* ancho */
+      height: 50px; /* alto */
+      border-radius: 50%; /* forma circular */
+      display: none;
+      font-size: 50px; /* tamaño de la flecha */
+      color: white; /* color del icono */
     }
     /* End portafolio */
 
@@ -276,12 +329,43 @@ body {
   width: 100%;
 }
 
+
 .portafolio .projects .cards .small {
   display: none;
 }
 
 .portafolio .projects .cards .large {
   display: flex;
+}
+
+/* .owl-theme .owl-nav [class*="owl-"], .owl-theme .owl-dots .owl-dot span {
+  background-color: var(--color-yellow);
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+  display: inline-block; 
+} */
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50em;
+  background-color: var(--color-yellow); /* color de fondo */
+  width: 50px; /* ancho */
+  height: 50px; /* alto */
+  border-radius: 50%; /* forma circular */
+  display: none;
+  font-size: 50px; /* tamaño de la flecha */
+  color: white; /* color del icono */
+}
+
+.owl-prev {
+  left: 10px;
+}
+
+.owl-next {
+  right: 10px;
 }
 
   /* End portafolio */
