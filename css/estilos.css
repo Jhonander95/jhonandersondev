@@ -35,6 +35,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  z-index: 99;
   position: fixed;
   top: 0;
   left: 50%;
@@ -49,17 +50,18 @@ body {
   margin: .5rem;
   color: var(--color-black);
   background-color: var(--color-white);
-  padding: .5rem .73rem;
+  padding: .3rem .5rem;
   border: 1px solid #000;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 
  /*  End header */
 
 /*      Start sections */
 
+/*   Start Home */
 .article section {
   color: var(--color-white);
   display: flex;
@@ -68,11 +70,15 @@ body {
   gap: 20px;
   height: 100vh;
 }
+.article .home {
+  width: 100%;
+  margin-top: auto;
+}
 
-.article section img {
+/* .article section img {
   width: 300px;
   height: auto;
-}
+} */
 
 .article .home .description-profile {
   display: flex;
@@ -86,6 +92,8 @@ body {
 }
 .image-container .image {
   width: 100%;
+  border-radius: 50%;
+  border: #d0b824 5px solid;
 }
 .image-container .description-profile {
   position: absolute;
@@ -106,8 +114,39 @@ body {
   border-bottom: #d0b824 solid 1px;
 }
 
+   /* End HOme */
 
-   /* End sections */
+    /* Start portafolio */
+
+    .portafolio {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      text-align: center;
+
+    }
+    
+    .portafolio .projects {
+      width: 80%;
+      height: 80%;
+    }
+    
+    .cards {
+      width: 100%;
+    } 
+    .portafolio .projects .cards .small  {
+     width: 90%;
+
+    }
+
+    .portafolio .projects .cards .large {
+      display: none;
+    }
+    /* End portafolio */
+
+    /* End sections */
 
    /* Start footer */
 .footer {
@@ -140,7 +179,7 @@ body {
 
 /*     Start MediaQueries */
 
-@media  screen and (min-width: 768px) {
+@media  screen and (min-width: 600px) {
   /* Aquí van los estilos para resoluciones de pantalla mayores o iguales a 768px */
   
    /*  HEader */
@@ -166,7 +205,6 @@ body {
   color: var(--color-black);
   background-color: var(--color-white);
   padding: .5rem .73rem;
-  border: 1px solid #000;
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -179,13 +217,13 @@ body {
 }
 
 .home .image-container {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 .home .image-container .image {
-  width: 50%;
+  width: 30%;
   margin-right: 20px;
 }
 
@@ -205,12 +243,46 @@ body {
 .home .image-container .description-profile h1 {
   margin-bottom: 30px;
   border-bottom: #d0b824 solid 3px;
+  text-align: center;
 }
 
 .home .image-container .description-profile h2 {
   margin-bottom: 30px;
   border-bottom: #d0b824 solid 1px;
+  text-align: center;
 }
 
+.home .image-container .description-profile p {
+  margin-bottom: 30px;
+  border-bottom: #d0b824 solid 1px;
+  text-align: center;
+}
 
+ /*  End home */
+
+  /* Start Portafolio */
+
+ .portafolio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.portafolio .projects {
+  width: 80%;
+}
+
+.cards {
+  width: 100%;
+}
+
+.portafolio .projects .cards .small {
+  display: none;
+}
+
+.portafolio .projects .cards .large {
+  display: flex;
+}
+
+  /* End portafolio */
 }
