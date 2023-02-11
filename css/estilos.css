@@ -261,10 +261,58 @@ article .skills .container-skills {
 
   /* Start contacto */
 
+/* .contacto {
+  border-bottom: #d0b824 10px solid;
+} */
+
+/* Contacto */
 .contacto {
   border-bottom: #d0b824 10px solid;
 }
 
+.contacto1 {
+	border-top: 1px solid var(--color-yellow);
+	border-bottom: 1px solid var(--color-yellow);
+  color: var(--color-black);
+}
+
+.contacto1 .titulo {
+	color: var(--color-yellow);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.contacto1 .formulario input[type="text"],
+.contacto1 .formulario input[type="email"],
+.contacto1 .formulario textarea {
+	padding: 15px;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contacto1 .formulario textarea {
+	height: 150px;
+	min-height: 150px;
+	max-height: 250px;
+}
+
+.contacto1 .formulario .boton {
+	background: var(--color-yellow);
+	border: none;
+	padding: 7px 30px;
+	color: var(--color-black);
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+	width: auto;
+	border-radius: 3px;
+}
+
+.contacto1 .formulario .boton:hover {
+	background: var(--color-yellow-ligth) !important;
+}
 
     /* End Contacto */
 
