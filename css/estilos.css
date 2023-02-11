@@ -75,6 +75,7 @@ body {
 .article .home {
   width: 100%;
   margin-top: auto;
+  border-bottom: #d0b824 10px solid;
 }
 
 /* .article section img {
@@ -96,7 +97,7 @@ body {
 .image-container .image {
   width: 100%;
   border-radius: 50%;
-  border: #d0b824 5px solid;
+/*   border: #d0b824 5px solid; */
 }
 
 .image-container .description-profile {
@@ -130,12 +131,14 @@ body {
   height: 100%;
   justify-content: center;
   text-align: center;
+  border-bottom: #d0b824 10px solid;
 
 }
 
 .portafolio .projects {
   width: 80%;
   height: 80%;
+/*   border-bottom: #d0b824 3px solid; */
 }
 
 .cards {
@@ -181,6 +184,10 @@ body {
   margin-top: 20px;
 }
 
+.cards button:hover {
+background-color: var(--color-yellow-ligth);
+}
+
 .portafolio .projects .cards .small {
   width: 90%;
 
@@ -220,7 +227,13 @@ article .skills {
   justify-content: center;
   align-items: center;
   width: 100%;
+  border-bottom: #d0b824 10px solid;
 }
+
+.skills h3 {
+  border-bottom: #d0b824 3px solid;
+}
+
 article .skills .container-skills {
  width: 80%;
 }
@@ -245,6 +258,48 @@ article .skills .container-skills {
 }
 
   /* End Skills */
+
+  /* Start contacto */
+
+.contacto {
+  border-bottom: #d0b824 10px solid;
+}
+
+
+    /* End Contacto */
+
+  /* Star Portafolio-2 */
+.portafolio-2-s {
+   border-bottom: #d0b824 10px solid; 
+
+}
+
+.portafolio-2 {
+
+}
+
+.portafolio-2 .titulo {
+  color: var(--color-yellow);
+}
+
+.portafolio-2 .galeria .contenedor-imagen {
+  max-height: 180px;
+  overflow: hidden;
+}
+
+.portafolio-2 .galeria .contenedor-imagen a {
+  background: var(--color-yellow);
+  display: inline-block;
+}
+
+.portafolio-2 .galeria .contenedor-imagen a:hover img {
+  opacity: 80%;
+}
+
+
+
+  /* End Portafolio-2 */
+
 
 /* End sections */
 
@@ -456,4 +511,28 @@ article .skills .container-skills {
     padding-left: 20px;
   }
 
+/*   End skills */
+
+/*  Start portafolio-2 */
+
+
+
+/*  Start portafolio-2 */
+
+}
+
+@media screen and (min-width: 992px) {
+
+/*   Start portafolio-2 */
+
+.portafolio-2 .galeria .contenedor-imagen:nth-child(1) {order: 3;}
+.portafolio-2 .galeria .contenedor-imagen:nth-child(2) {order: 2;}
+.portafolio-2 .galeria .contenedor-imagen:nth-child(3) {order: 1;}
+.portafolio-2 .galeria .contenedor-imagen:nth-child(4) {order: 7;}
+.portafolio-2 .galeria .contenedor-imagen:nth-child(5) {order: 5;}
+.portafolio-2 .galeria .contenedor-imagen:nth-child(6) {order: 6;}
+.portafolio-2 .galeria .contenedor-imagen:nth-child(7) {order: 4;} 
+
+
+/*   End portafolio-2 */
 }
