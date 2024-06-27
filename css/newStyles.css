@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    /* background-color: rgb(82, 80, 80); */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-image: url(https://img.freepik.com/free-photo/3d-dark-grunge-display-background-with-smoky-atmosphere_1048-16218.jpg?t=st=1719508728~exp=1719512328~hmac=1b6b4ecafc6dedaa509083ed678c11c6285344f994e0d5b445a891a99072e28d&w=740);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffff !important;
+} 
+
+p, h1, a, li {
+    color: #ffff !important;
+}
+
+.header {
+    background-color:  #000 !important ;
+    
+}
+
+.main .i{
+    background-color: #8f8f06 !important;
+}
