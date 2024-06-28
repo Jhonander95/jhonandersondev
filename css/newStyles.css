@@ -16,7 +16,10 @@ p, h1, a, li {
     color: #ffff !important;
 }
 
-a:hover {
+.header a {
+    border-bottom: 1px solid #000;
+}
+.header a:hover {
     border-bottom: 1px solid #8f8f06;
 }
 
@@ -33,10 +36,12 @@ main .i{
     background-color: #8f8f06 !important;
 }
 
-
+.main .profile {
+    background-color: #000;
+}
 
 .about {
-    background-color: #aba5a5;
+    background-color: #d1d1d1;
 }
 
 .about h2, h6, p {
@@ -54,4 +59,18 @@ main .i{
 .about .image-about img {
     padding: 2rem;
     border: 1px solid #8f8f06;
+}
+
+.works {
+    background-color: aliceblue !important;
+    color: #000 !important;
+}
+
+.works h3 {
+    padding: .5rem;
+    border-bottom: 3px solid #8f8f06;
+}
+
+.title-blog {
+    border-bottom: 1px solid #8f8f06;
 }
