@@ -16,11 +16,42 @@ p, h1, a, li {
     color: #ffff !important;
 }
 
-.header {
-    background-color:  #000 !important ;
-    
+a:hover {
+    border-bottom: 1px solid #8f8f06;
 }
 
-.main .i{
+.header {
+    background-color:  #000 !important ;
+
+}
+
+
+
+
+main .i{
+    padding: .5rem;
     background-color: #8f8f06 !important;
+}
+
+
+
+.about {
+    background-color: #aba5a5;
+}
+
+.about h2, h6, p {
+    color: #000 !important;
+}
+
+.about h2 {
+    border-bottom: 5px solid #8f8f06;
+}
+
+.about .image-about {
+    background-color: #000;
+}
+
+.about .image-about img {
+    padding: 2rem;
+    border: 1px solid #8f8f06;
 }
