@@ -24,32 +24,27 @@ $(document).ready(function(){
     }
   });
 });
-/* console.log('Hola');
-const sections = document.querySelectorAll('section');
+function send () {
+  let email = document.getElementById('email');
+  let messaje = document.getElementById('messaje');
 
-let enableAnimation = true;
+  console.log(email.value, messaje.value);
 
-// Función para controlar el comportamiento de los botones de navegación
-const navigate = () => {
-  enableAnimation = false;
-  // Código para navegar entre secciones
-  setTimeout(() => {
-    enableAnimation = true;
-  }, 1000); // Tiempo en milisegundos antes de habilitar la animación nuevamente
-};
+  const serviceID = 'default_service';
+  const templateID = 'template_7dit2ni';
 
-// Evento de scroll
-window.addEventListener('scroll', () => {
-  if (!enableAnimation) return;
-  // Código para la animación
-});
+  emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      
+      alert('Sent!');
+    }, (err) => {
+      
+      alert(JSON.stringify(err));
+    });
 
-window.addEventListener('scroll', () => {
-  for (let i = 0; i < sections.length; i++) {
-    let section = sections[i];
-    if (section.offsetTop - window.innerHeight / 2  < window.pageYOffset) {
-        section.scrollIntoView({ behavior: 'smooth' });
-        console.log(section.id)
-    }
-  }
-}); */
+  email.value = "";
+
+  messaje.value = "";
+
+} 
+

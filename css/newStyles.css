@@ -25,7 +25,11 @@ p, h1, a, li {
 
 .header {
     background-color:  #000 !important ;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
 }
 
 
@@ -73,4 +77,17 @@ main .i{
 
 .title-blog {
     border-bottom: 1px solid #8f8f06;
+}
+
+.submit {
+    background-color: #8f8f06 !important;
+}
+
+.border-botton {
+    border-bottom: 3px solid #8f8f06;
+}
+
+footer p {
+    color: #d1d1d1 !important;
+    background-color: #000;
 }
