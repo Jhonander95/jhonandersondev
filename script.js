@@ -1,20 +1,25 @@
 const btn = document.getElementById('button');
 
+
 document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Sending...';
+   btn.value = 'Enviando...';
 
    const serviceID = 'default_service';
    const templateID = 'template_7dit2ni';
 
+   let email = document.getElementById('to_email');
+   let messaje = document.getElementById('message');
+
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
+      btn.value = 'Enviar Email';
+      email.value = '';
+      messaje.value = '';
     }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+      
+      
     });
 });
