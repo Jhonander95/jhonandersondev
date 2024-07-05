@@ -20,7 +20,7 @@ p, h1, a, li {
     border-bottom: 1px solid #000;
 }
 .header a:hover {
-    border-bottom: 1px solid #8f8f06;
+    border-bottom: 3px solid #8f8f06;
 }
 
 .header {
@@ -74,6 +74,13 @@ main .i{
 .works h3 {
     padding: .5rem;
     border-bottom: 3px solid #8f8f06;
+}
+
+.works img:hover {
+    
+    -webkit-animation: rotate-hor-center 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: rotate-hor-center 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
 }
 
 .title-blog {
