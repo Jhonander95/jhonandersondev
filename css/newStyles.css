@@ -103,8 +103,8 @@ footer p {
 
 .container-social {
     
-    color: var(--color-white);
-    background-color: #000;
+    color: #fff;
+    
   }
 
 .social {
@@ -127,8 +127,8 @@ footer p {
     text-align: center;
     margin: .5rem;
     /*   margin-top: 1rem; */
-    color: var(--color-black);
-    background-color: var(--color-white);
+    color: #000!important;
+    background-color: #fff;
     padding: .6rem .7rem;
     border: 1px solid #000;
     border-radius: 50%;
