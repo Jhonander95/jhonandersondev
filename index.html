@@ -6,306 +6,141 @@
     <meta name="description" content="Jhonanderson Téllez, desarrollador de software.">
     <title>Jhonanderson Téllez</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/newStyles.css">
 </head>
 <body>
-    <div class="container">
-
-        <header class="row py-2 mb-5">
-
-            <nav class="navbar navbar-expand-lg text-light header">
-
-              <div class="col-sm-12  col-md-6 px-5 ">
-                <a class="navbar-brand  " href="#">Jhonanderson Téllez</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                
-              </div>
-
-              <div class="collapse navbar-collapse col-sm-4  col-md-6 justify-content-end" id="navbarNavDropdown">
+    <!-- Header -->
+    <header class="bg-dark text-white py-3 fixed-top">
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand fw-bold" href="#">Jhonanderson Téllez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#me">Sobre mi</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#works">Trabajos</a>
-                  </li>
-                  
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#me">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#works">Trabajos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
                 </ul>
-              </div>
-
-            </nav>
-          
-        </header>
-
-        <div class="container-social " >
-          <div class="social">
-            <a class="bi bi-github" target="_blank" href="https://github.com/Jhonander95"></a>
-            <a class="bi bi-linkedin" target="_blank" href="https://www.linkedin.com/in/jhonanderson-tellez-dev/"></a>
-          </div>
-        </div>
-
-        <main class="main row align-items-center mt-5 ">
-
-            <div class="col-md-5 col-12 prestentacion ">
-
-                <!-- <h3>MI NOMBRE ES</h3> -->
-                <h1>JHONANDERSON TÉLLEZ</h1>
-                <p class="i" > DESARROLLADOR DE SOFTWARE </p>
-
             </div>
-
-            <div class=" col-md-7 col-12  profile">
-              <img class="container-fluid" src="img/profile-1.jpg" alt="photo the profile">
-            </div>
-
-        </main>
-
-        <section class="row about" id="me">
-
-          <div class=" col-md-5 col-12 order-md-1 order-2 p-md-5 pt-2  image-about">
-
-            <img class="container-fluid mt-5" src="img/profile-1.jpg" alt="photo the profile">
-          
-          </div>
-          
-          <div class="col-md-7 col-12 order-1 order-md-2 p-md-5">
-
-            <div class="row p-md-5 p-3 ">
-
-              <div class="col-6">
-
-                <h6 class="" >¿Quien soy?</h6>
-                <h2 class="text-center" >HOLA</h2>
-
-              </div>
-
-              <div class="col-6">
-
-                <img src="" alt="">
-
-              </div>
-
-              <div class="col-12">
-
-                <p class="mt-5">
-                  Inicie mi carrera en el mundo de la tecnología reparando computadores e impresoras. 
-                  Descubrí el fascinante mundo de la programación y me adentré en él.
-                </p>
-                <p>
-                  Llevo un par de años desarrollando soluciones de software para emprendedores, pequeñas y medianas empresas.
-                  Estoy buscando nuevos desafíos, nunca paro de aprender y poner a prueba mis límites.
-                </p>
-                <p>
-                  Tengo la capacidad de adaptarme rápidamente a nuevos proyectos, 
-                  conocimientos en metodologías ágiles y CI/CD.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
-
-        <section class="row works" id="works">
-
-          <div class="row text-center mt-5">
-
-            <div class="col-12">
-
-              <h3>Mis Trabajos</h3>
-
-            </div>
-
-          </div>
-
-          <div class="row p-5">
-
-            <div class="col-lg-6 col-md-12  blog mb-3 ">
-
-              <div class="row">
-
-                <div class="col-12 col-md-6">
-                  <a target="_blank" href="https://blog-codigo-con-jhoanderson.web.app/">
-                    <img src="img/blog.png" alt="blog" class="d-block w-100" >
-                  </a>
-                </div>
-
-                <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <h4 class="col-12 text-center title-blog" >Blog</h4>
-
-                    <p>
-                      En este proyecto desarrollé un blog personal. Se desarrolló como una aplicación serverlees,
-                      usando Angular 💖 y Firebase🔥.
-                    </p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="col-lg-6 col-md-12 taller  mb-3 ">
-              
-              <div class="row">
-
-                <div class="col-12 col-md-6 align-items-center ">
-                  <a target="_blank" href="https://repaircontrol.web.app/">
-                    <img src="img/taller.png" alt="blog" class="d-block w-100" >
-                  </a>
-                </div>
-
-                <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <h4 class="col-12 text-center title-blog" >Repair Control</h4>
-
-                    <p>
-                      Acá desarrollé una solución para una empresa de servicio técnico, 
-                      con manejo de clientes, equipos, técnicos, órdenes de servicio, estado de las órdenes y mucho más.
-                    </p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="col-lg-6 col-md-12 taller  mb-3 ">
-              
-              <div class="row">
-
-                <div class="col-12 col-md-6 align-items-center ">
-                  <a target="_blank" href="">
-                    <img src="img/gelato.png" alt="blog" class="d-block w-100" >
-                  </a>
-                </div>
-
-                <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <h4 class="col-12 text-center title-blog" >Gelato</h4>
-
-                    <p>
-                      Este es un software para gestión de una heladería, maneja la carta, pedidos y reportes de ventas.
-                    </p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="col-lg-6 col-md-12 taller  mb-3 ">
-              
-              <div class="row">
-
-                <div class="col-12 col-md-6 align-items-center ">
-                  <a target="_blank" href="./firstVersion.html">
-                    <img src="img/jhonandrsondev.png" alt="blog" class="d-block w-100" >
-                  </a>
-                </div>
-
-                <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <h4 class="col-12 text-center title-blog" >Primera versión</h4>
-
-                    <p>
-                      Acá les muestro la primera versión de mi web personal.
-                    </p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
-
-        <section class="contact py-5" id="contact">
-
-          <div class="row d-flex justify-content-center border-botton">
-
-            <h4 class="col-12 text-center">Contacto</h4>
-
-          </div>
-
-          <div class="row d-flex justify-content-center  ">
-
-            <div class="col-md-4 col-12">
-       
-              <form id="form">
-                
-                  <label for="to_email" class="form-label mt-3">Email:</label>
-                  <input type="text" name="to_email" id="to_email" class="form-control">
-                
-                  <label for="message" class="form-label mt-3" >Mensaje:</label>
-                  <textarea name="message" id="message" class="form-control"></textarea>
-                
-                <div class="row">
-
-                  <div class="col-12 text-center">
-                    <input type="submit" id="button" value="Enviar" class="btn submit mt-3 " >
-                  </div>
-
-                </div>
-
-              </form>
-
-            </div>
-
-          </div>
-
-        </section>
-
-
-
-        <footer class="footer row ">
-          <div class="col-12 text-center  ">
-            <p class="py-5">
-              2024 | Jhonanderson Téllez ®
-            </p>
-          </div>
-        </footer>
-
+        </nav>
+    </header>
+
+    <div class="social-links">
+      <a href="https://github.com/Jhonander95" target="_blank" class="bi bi-github"></a>
+      <a href="https://www.linkedin.com/in/jhonanderson-tellez-dev/" target="_blank" class="bi bi-linkedin"></a>
+  </div>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+        <a href="https://github.com/Jhonander95" target="_blank" class="bi bi-github"></a>
+        <a href="https://www.linkedin.com/in/jhonanderson-tellez-dev/" target="_blank" class="bi bi-linkedin"></a>
     </div>
 
-    <script type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5">
+        <!-- Introduction Section -->
+        <section class="row align-items-center mt-5">
+            <div class="col-md-6 text-center text-md-start">
+                <h1 class="display-4">JHONANDERSON TÉLLEZ</h1>
+                <p class="lead bg-warning d-inline-block px-3 py-1">DESARROLLADOR DE SOFTWARE</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="/img/profile-4.png" alt="Foto de perfil" class="img-fluid rounded-circle">
+            </div>
+        </section>
 
-    <script type="text/javascript">
-      emailjs.init('JNrPvwcHMl360dxDn')
-    </script>
+        <!-- About Me Section -->
+        <section id="me" class="row my-5 align-items-center">
+            <!-- Imagen primero -->
+            <div class="col-md-6 text-center">
+                <img src="/img/12.jpg" alt="Sobre mí" class="img-fluid">
+            </div>
+            <!-- Texto después -->
+            <div class="col-md-6">
+                <h2 class="mb-4">¿Quién soy?</h2>
+                <p>Inicié mi carrera en el mundo de la tecnología reparando computadores e impresoras. Descubrí el fascinante mundo de la programación y me adentré en él.</p>
+                <p>Llevo un par de años desarrollando soluciones de software para emprendedores, pequeñas y medianas empresas. Estoy buscando nuevos desafíos, nunca paro de aprender y poner a prueba mis límites.</p>
+                <p>Tengo la capacidad de adaptarme rápidamente a nuevos proyectos, conocimientos en metodologías ágiles y CI/CD.</p>
+            </div>
+        </section>
 
+        <!-- Works Section -->
+        <section id="works" class="my-5">
+            <h3 class="text-center mb-5">Mis Trabajos</h3>
+            <div class="row g-4">
+                <!-- Work Item -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <a href="https://blog-codigo-con-jhoanderson.web.app/" target="_blank">
+                            <img src="img/blog.png" class="card-img-top" alt="Blog">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Blog</h5>
+                            <p class="card-text">Desarrollé un blog personal como una aplicación serverless usando Angular y Firebase.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Work Item -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <a href="https://repaircontrol.web.app/" target="_blank">
+                            <img src="img/taller.png" class="card-img-top" alt="Repair Control">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Repair Control</h5>
+                            <p class="card-text">Una solución para una empresa de servicio técnico, con manejo de clientes, equipos, técnicos y órdenes de servicio.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Otros trabajos... -->
+            </div>
+        </section>
 
+        <!-- Contact Section -->
+        <section id="contact" class="my-5">
+            <h4 class="text-center mb-4">Contacto</h4>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="to_email" class="form-label">Email:</label>
+                            <input type="email" name="to_email" id="to_email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje:</label>
+                            <textarea name="message" id="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" id="button" class="btn btn-warning">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>2024 | Jhonanderson Téllez ®</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 </body>
 </html>
