@@ -1,8 +1,7 @@
-
 const btn = document.getElementById('button');
 
 
-document.getElementById('contact-form')
+document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
@@ -21,7 +20,6 @@ document.getElementById('contact-form')
       messaje.value = '';
     }, (err) => {
       
-      console.log(err);
       
     });
 });
