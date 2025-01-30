@@ -15,6 +15,7 @@ header {
     color: white !important; /* Texto en blanco */
     font-weight: 500; /* Peso de la fuente */
     transition: color 0.3s ease; /* Transición suave */
+    
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -23,6 +24,12 @@ header {
 
 .navbar-dark .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.5); /* Borde del toggler en blanco */
+}
+
+.navbar {
+    background: rgb(13,2,59);
+    background: linear-gradient(90deg, rgba(13,2,59,1) 0%, rgba(16,16,40,1) 35%, rgba(30,48,51,1) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .navbar-dark .navbar-toggler-icon {
