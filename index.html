@@ -12,8 +12,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <!-- Header -->
@@ -68,17 +72,67 @@
                     <img src="img/profile-selfie.jpg" alt="Foto de perfil de Jhonanderson" class="profile-img">
                     <div class="profile-description">
                         <h2>Jhonanderson</h2>
-                        <p>Desarrollador de software con experiencia en desarrollo web. 
-                            Apasionado por la tecnología y siempre en busca de nuevos desafíos.
+                        <p>Desarrollador de software especializado en desarrollo web, con experiencia en la creación 
+                            de soluciones eficientes y escalables. Apasionado por la tecnología y el aprendizaje continuo, 
+                            siempre en busca de nuevos desafíos.
                         </p>
                         <p>
-                            Tengo conocimientos en HTML, CSS, JavaScript, Angular, Bootstrap, Git y GitHub.
-                            Actualmente estoy aprendiendo Go y PostgreSQL.
+                            Cuento con sólidos conocimientos en HTML, CSS, JavaScript, Angular, 
+                            Bootstrap, Git y GitHub. Actualmente, estoy profundizando en Go y PostgreSQL 
+                            para expandir mis habilidades en desarrollo backend.
                         </p>
                     </div>
                 </div>
             </div>
         </main>
+
+        <!-- Technologies Section -->
+        <section class="technologies-section my-3">
+            <div class="swiper tech-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="fab fa-angular"></i>
+                        <span>Angular</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="fab fa-bootstrap"></i>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="fas fa-database"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="fas fa-fire"></i>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="fab fa-golang"></i>
+                        <span>Go</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="my-5">
@@ -148,6 +202,8 @@
                 </div>
             </div>
         </section>
+
+        
     </section>
 
     <!-- Footer -->
@@ -163,5 +219,28 @@
     </script>
     <script src="main.js"></script>
 
-</body>
+    <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".tech-swiper", {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 3,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                    },
+                }
+            });
+        </script>
+    </body>
 </html>

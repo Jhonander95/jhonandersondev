@@ -110,3 +110,38 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Technologies Section */
+.technologies-section {
+    padding: 2rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.tech-swiper {
+    padding: 2rem 0;
+}
+
+.tech-swiper .swiper-slide {
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.tech-swiper .swiper-slide:hover {
+    transform: translateY(-10px);
+}
+
+.tech-swiper i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #000; /* Cambiado a negro sólido */
+}
+
+.tech-swiper span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #000; /* Cambiado a negro para mejor legibilidad */
+}
